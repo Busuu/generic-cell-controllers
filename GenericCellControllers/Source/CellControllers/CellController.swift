@@ -69,7 +69,7 @@ open class CellController<T: ReusableCellHolder>: CellControllerType {
         return cell
     }
 
-    public func innerCurrentCell() -> T.CellType? {
+    public final func innerCurrentCell() -> T.CellType? {
         guard let indexPath = indexPath else { return nil }
         return reusableCellHolder?.cellForItem(at: indexPath)
     }
