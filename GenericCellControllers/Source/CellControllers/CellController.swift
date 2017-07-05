@@ -41,7 +41,7 @@ open class CellController<T: ReusableCellHolder>: CellControllerType {
     private weak var reusableCellHolder: T?
     private var indexPath: IndexPath?
     
-    public class var cellClass: AnyClass {
+    open class var cellClass: AnyClass {
         fatalError("Must be overriden by children.")
     }
 
@@ -74,7 +74,7 @@ open class CellController<T: ReusableCellHolder>: CellControllerType {
         return reusableCellHolder?.cellForItem(at: indexPath)
     }
 
-    public func innerConfigureCell(_ cell: T.CellType) {
+    open func innerConfigureCell(_ cell: T.CellType) {
         // By default do nothing.
     }
     

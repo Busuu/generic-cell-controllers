@@ -25,7 +25,7 @@ open class GenericCollectionCellController<T: UICollectionViewCell> : Collection
         return innerCurrentCell() as? T
     }
 
-    public func configureCell(_ cell: T) {
+    open func configureCell(_ cell: T) {
         // By default do nothing.
     }
     
