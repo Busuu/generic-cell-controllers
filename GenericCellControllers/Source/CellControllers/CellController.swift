@@ -16,7 +16,7 @@ public protocol CellControllerType: class {
 
     func cellFromReusableCellHolder(_ reusableCellHolder: CellHolder, forIndexPath indexPath: IndexPath) -> CellHolder.CellType
     func willDisplayCell()
-    func didTapCell()
+    func cellSelected()
     func cellSize(reusableCellHolder: CellHolder) -> CGSize
 }
 
@@ -26,7 +26,7 @@ public extension CellControllerType {
         // By default do nothing.
     }
 
-    func didTapCell() {
+    func cellSelected() {
         // By default do nothing.
     }
 
