@@ -39,7 +39,7 @@ public extension CellControllerType {
 open class CellController<T: ReusableCellHolder>: CellControllerType {
 
     private weak var reusableCellHolder: T?
-    private var indexPath: IndexPath?
+    private(set) public var indexPath: IndexPath?
 
     public init() {}
 
