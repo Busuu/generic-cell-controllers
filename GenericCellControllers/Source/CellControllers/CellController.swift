@@ -40,7 +40,9 @@ open class CellController<T: ReusableCellHolder>: CellControllerType {
 
     private weak var reusableCellHolder: T?
     private var indexPath: IndexPath?
-    
+
+    public init() {}
+
     open class var cellClass: AnyClass {
         fatalError("Must be overriden by children.")
     }
