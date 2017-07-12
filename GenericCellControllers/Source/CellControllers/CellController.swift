@@ -72,7 +72,7 @@ open class CellController<T: ReusableCellHolder>: CellControllerType {
         // By default do nothing.
     }
 
-    open func cellSize(reusableCellHolder: CellHolder) -> CGSize {
+    open func cellSize(reusableCellHolder: T) -> CGSize {
         return CGSize.zero
     }
     
