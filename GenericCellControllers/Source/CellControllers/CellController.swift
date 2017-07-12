@@ -20,22 +20,6 @@ public protocol CellControllerType: class {
     func cellSize(reusableCellHolder: CellHolder) -> CGSize
 }
 
-public extension CellControllerType {
-
-    func willDisplayCell() {
-        // By default do nothing.
-    }
-
-    func cellSelected() {
-        // By default do nothing.
-    }
-
-    func cellSize(reusableCellHolder: CellHolder) -> CGSize {
-        return CGSize.zero
-    }
-
-}
-
 open class CellController<T: ReusableCellHolder>: CellControllerType {
 
     private weak var reusableCellHolder: T?
@@ -78,6 +62,18 @@ open class CellController<T: ReusableCellHolder>: CellControllerType {
 
     open func innerConfigureCell(_ cell: T.CellType) {
         // By default do nothing.
+    }
+
+    open func willDisplayCell() {
+        // By default do nothing.
+    }
+
+    open func cellSelected() {
+        // By default do nothing.
+    }
+
+    open func cellSize(reusableCellHolder: CellHolder) -> CGSize {
+        return CGSize.zero
     }
     
 }

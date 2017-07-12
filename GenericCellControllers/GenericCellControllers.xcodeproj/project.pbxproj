@@ -26,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB3D16CA1F167D0B00FE6CE3 /* GenericCellControllers.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = GenericCellControllers.podspec; path = ../GenericCellControllers.podspec; sourceTree = "<group>"; };
 		CB52610D1F0AA79000C7BF65 /* GenericCellControllers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericCellControllers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5261161F0AA79000C7BF65 /* GenericCellControllersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericCellControllersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5261281F0AA7B600C7BF65 /* GenericCellControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericCellControllers.h; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		CB5261031F0AA78F00C7BF65 = {
 			isa = PBXGroup;
 			children = (
+				CB3D16CA1F167D0B00FE6CE3 /* GenericCellControllers.podspec */,
 				CB5261271F0AA7B600C7BF65 /* Source */,
 				CB52612C1F0AA7C300C7BF65 /* Tests */,
 				CB52610E1F0AA79000C7BF65 /* Products */,
