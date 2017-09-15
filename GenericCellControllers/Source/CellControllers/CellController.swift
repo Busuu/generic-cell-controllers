@@ -23,7 +23,7 @@ public protocol CellControllerType: class {
 open class CellController<T: ReusableCellHolder>: CellControllerType {
 
     private weak var reusableCellHolder: T?
-    private(set) public var indexPath: IndexPath?
+    public var indexPath: IndexPath?
 
     public init() {}
 

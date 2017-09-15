@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GenericCellControllers"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "Framework to make it easier to work with heterogeneous lists of data in iOS."
   s.description  = <<-DESC
                     Generic Cell Controllers provide protocols, implementations and extensions that will make work
