@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GenericCellControllers"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "Framework that makes it easier to work with heterogeneous lists of data in iOS."
   s.description  = <<-DESC
                     Generic Cell Controllers provide protocols, implementations and extensions that will make work
@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
   s.source_files  = "GenericCellControllers/Source/**/*.{h,m,swift}"
   s.public_header_files = "GenericCellControllers/Source/**/*.h"
   s.requires_arc = true
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
 end
