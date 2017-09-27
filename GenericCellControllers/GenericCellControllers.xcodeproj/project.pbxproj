@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB5261171F0AA79000C7BF65 /* GenericCellControllers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52610D1F0AA79000C7BF65 /* GenericCellControllers.framework */; };
 		CB52612A1F0AA7B600C7BF65 /* GenericCellControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = CB5261281F0AA7B600C7BF65 /* GenericCellControllers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBA31A271F7BB48F00E6BFFE /* GenericCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA31A261F7BB48F00E6BFFE /* GenericCellController.swift */; };
 		CBB1F0DE1F0AA96500F8D4CD /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1F0DB1F0AA96500F8D4CD /* CellController.swift */; };
 		CBB1F0DF1F0AA96500F8D4CD /* ReusableCellHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1F0DD1F0AA96500F8D4CD /* ReusableCellHolder.swift */; };
 		CBB1F0E11F0AACF500F8D4CD /* GenericTableCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1F0E01F0AACF500F8D4CD /* GenericTableCellController.swift */; };
@@ -32,6 +33,7 @@
 		CB5261281F0AA7B600C7BF65 /* GenericCellControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericCellControllers.h; sourceTree = "<group>"; };
 		CB5261291F0AA7B600C7BF65 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB52612E1F0AA7C300C7BF65 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA31A261F7BB48F00E6BFFE /* GenericCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCellController.swift; sourceTree = "<group>"; };
 		CBB1F0DB1F0AA96500F8D4CD /* CellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		CBB1F0DD1F0AA96500F8D4CD /* ReusableCellHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCellHolder.swift; sourceTree = "<group>"; };
 		CBB1F0E01F0AACF500F8D4CD /* GenericTableCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableCellController.swift; sourceTree = "<group>"; };
@@ -80,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				CBB1F0DA1F0AA96500F8D4CD /* CellControllers */,
-				CBB1F0DC1F0AA96500F8D4CD /* ReusableCellHolders */,
+				CBB1F0DC1F0AA96500F8D4CD /* ReusableCell */,
 				CB5261281F0AA7B600C7BF65 /* GenericCellControllers.h */,
 				CB5261291F0AA7B600C7BF65 /* Info.plist */,
 			);
@@ -101,16 +103,17 @@
 				CBB1F0DB1F0AA96500F8D4CD /* CellController.swift */,
 				CBB1F0E01F0AACF500F8D4CD /* GenericTableCellController.swift */,
 				CBB1F0E21F0AAD0F00F8D4CD /* GenericCollectionCellController.swift */,
+				CBA31A261F7BB48F00E6BFFE /* GenericCellController.swift */,
 			);
 			path = CellControllers;
 			sourceTree = "<group>";
 		};
-		CBB1F0DC1F0AA96500F8D4CD /* ReusableCellHolders */ = {
+		CBB1F0DC1F0AA96500F8D4CD /* ReusableCell */ = {
 			isa = PBXGroup;
 			children = (
 				CBB1F0DD1F0AA96500F8D4CD /* ReusableCellHolder.swift */,
 			);
-			path = ReusableCellHolders;
+			path = ReusableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +231,7 @@
 			files = (
 				CBB1F0E11F0AACF500F8D4CD /* GenericTableCellController.swift in Sources */,
 				CBB1F0E31F0AAD0F00F8D4CD /* GenericCollectionCellController.swift in Sources */,
+				CBA31A271F7BB48F00E6BFFE /* GenericCellController.swift in Sources */,
 				CBB1F0DF1F0AA96500F8D4CD /* ReusableCellHolder.swift in Sources */,
 				CBB1F0DE1F0AA96500F8D4CD /* CellController.swift in Sources */,
 			);

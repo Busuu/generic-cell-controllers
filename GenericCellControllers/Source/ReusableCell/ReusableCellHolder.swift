@@ -8,8 +8,22 @@
 
 import Foundation
 
+// MARK: - ReusableCell
+public protocol ReusableCell: class {
+    associatedtype CellHolder: ReusableCellHolder
+}
+
+extension UITableViewCell: ReusableCell {
+    public typealias CellHolder = UITableView
+}
+
+extension UICollectionViewCell: ReusableCell {
+    public typealias CellHolder = UICollectionView
+}
+
+// MARK: - ReusableCellHolder
 public protocol ReusableCellHolder: class {
-    associatedtype CellType
+    associatedtype CellType: ReusableCell where CellType.CellHolder == Self
 
     func register(_ nib: UINib?, forCellWithReuseIdentifier identifier: String)
     func register(_ cellClass: AnyClass?, forCellWithReuseIdentifier identifier: String)
