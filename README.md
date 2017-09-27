@@ -52,6 +52,7 @@ class MyTableController: UITableViewDataSource, UITableViewDelegate {
 }
 ```
 For points **2** and **3** we recommend the use of the [Factory pattern](https://tech.busuu.com/dealing-with-different-kinds-of-cells-in-swift-part-1-of-3-18c6cd10a0b3#4b40).
+
 4. Forward the relevant *delegate* and *datasource* methods to the Cell Controllers.
 ```swift
 ...
