@@ -10,7 +10,6 @@
 		CB0A90BF1F7D1753004C652A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A90BE1F7D1753004C652A /* AppDelegate.swift */; };
 		CB0A90C61F7D1753004C652A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB0A90C51F7D1753004C652A /* Assets.xcassets */; };
 		CB0A90C91F7D1753004C652A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0A90C71F7D1753004C652A /* LaunchScreen.storyboard */; };
-		CB0A90D41F7D1753004C652A /* GenericCellControllersExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A90D31F7D1753004C652A /* GenericCellControllersExampleTests.swift */; };
 		CB0A90E11F7D17A9004C652A /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A90DF1F7D17A9004C652A /* FeedTableViewController.swift */; };
 		CB0A90E21F7D17A9004C652A /* FeedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0A90E01F7D17A9004C652A /* FeedTableViewController.xib */; };
 		CB0A90EC1F7D1A14004C652A /* GenericCellControllers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0A90EB1F7D1A0A004C652A /* GenericCellControllers.framework */; };
@@ -38,16 +37,6 @@
 		CB0A91251F7D41A7004C652A /* TextDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0A91231F7D41A6004C652A /* TextDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CB0A90D01F7D1753004C652A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB0A90B31F7D1753004C652A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB0A90BA1F7D1753004C652A;
-			remoteInfo = GenericCellControllersExample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		CB0A90E61F7D19E9004C652A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -68,9 +57,6 @@
 		CB0A90C51F7D1753004C652A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB0A90C81F7D1753004C652A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB0A90CA1F7D1753004C652A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB0A90CF1F7D1753004C652A /* GenericCellControllersExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericCellControllersExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB0A90D31F7D1753004C652A /* GenericCellControllersExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCellControllersExampleTests.swift; sourceTree = "<group>"; };
-		CB0A90D51F7D1753004C652A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB0A90DF1F7D17A9004C652A /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		CB0A90E01F7D17A9004C652A /* FeedTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewController.xib; sourceTree = "<group>"; };
 		CB0A90EB1F7D1A0A004C652A /* GenericCellControllers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GenericCellControllers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,13 +92,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB0A90CC1F7D1753004C652A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -120,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				CB0A90BD1F7D1753004C652A /* GenericCellControllersExample */,
-				CB0A90D21F7D1753004C652A /* GenericCellControllersExampleTests */,
 				CB0A90BC1F7D1753004C652A /* Products */,
 				CB0A90E91F7D1A0A004C652A /* Frameworks */,
 			);
@@ -130,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				CB0A90BB1F7D1753004C652A /* GenericCellControllersExample.app */,
-				CB0A90CF1F7D1753004C652A /* GenericCellControllersExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,15 +125,6 @@
 				CB0A91051F7D310E004C652A /* Resources */,
 			);
 			path = GenericCellControllersExample;
-			sourceTree = "<group>";
-		};
-		CB0A90D21F7D1753004C652A /* GenericCellControllersExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				CB0A90D31F7D1753004C652A /* GenericCellControllersExampleTests.swift */,
-				CB0A90D51F7D1753004C652A /* Info.plist */,
-			);
-			path = GenericCellControllersExampleTests;
 			sourceTree = "<group>";
 		};
 		CB0A90DE1F7D177C004C652A /* Feed */ = {
@@ -271,24 +239,6 @@
 			productReference = CB0A90BB1F7D1753004C652A /* GenericCellControllersExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CB0A90CE1F7D1753004C652A /* GenericCellControllersExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB0A90DB1F7D1753004C652A /* Build configuration list for PBXNativeTarget "GenericCellControllersExampleTests" */;
-			buildPhases = (
-				CB0A90CB1F7D1753004C652A /* Sources */,
-				CB0A90CC1F7D1753004C652A /* Frameworks */,
-				CB0A90CD1F7D1753004C652A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CB0A90D11F7D1753004C652A /* PBXTargetDependency */,
-			);
-			name = GenericCellControllersExampleTests;
-			productName = GenericCellControllersExampleTests;
-			productReference = CB0A90CF1F7D1753004C652A /* GenericCellControllersExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -302,11 +252,6 @@
 					CB0A90BA1F7D1753004C652A = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
-					};
-					CB0A90CE1F7D1753004C652A = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = CB0A90BA1F7D1753004C652A;
 					};
 				};
 			};
@@ -324,7 +269,6 @@
 			projectRoot = "";
 			targets = (
 				CB0A90BA1F7D1753004C652A /* GenericCellControllersExample */,
-				CB0A90CE1F7D1753004C652A /* GenericCellControllersExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -351,13 +295,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB0A90CD1F7D1753004C652A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -380,23 +317,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB0A90CB1F7D1753004C652A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB0A90D41F7D1753004C652A /* GenericCellControllersExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CB0A90D11F7D1753004C652A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB0A90BA1F7D1753004C652A /* GenericCellControllersExample */;
-			targetProxy = CB0A90D01F7D1753004C652A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CB0A90C71F7D1753004C652A /* LaunchScreen.storyboard */ = {
@@ -551,40 +472,6 @@
 			};
 			name = Release;
 		};
-		CB0A90DC1F7D1753004C652A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9X4849482L;
-				INFOPLIST_FILE = GenericCellControllersExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.busuu.GenericCellControllersExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenericCellControllersExample.app/GenericCellControllersExample";
-			};
-			name = Debug;
-		};
-		CB0A90DD1F7D1753004C652A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9X4849482L;
-				INFOPLIST_FILE = GenericCellControllersExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.busuu.GenericCellControllersExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenericCellControllersExample.app/GenericCellControllersExample";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -602,15 +489,6 @@
 			buildConfigurations = (
 				CB0A90D91F7D1753004C652A /* Debug */,
 				CB0A90DA1F7D1753004C652A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB0A90DB1F7D1753004C652A /* Build configuration list for PBXNativeTarget "GenericCellControllersExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB0A90DC1F7D1753004C652A /* Debug */,
-				CB0A90DD1F7D1753004C652A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
