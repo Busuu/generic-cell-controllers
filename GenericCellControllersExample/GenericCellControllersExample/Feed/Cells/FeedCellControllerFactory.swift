@@ -20,7 +20,7 @@ class FeedCellControllerFactory {
     }
 
     func cellControllers(from elements: [FeedElement], coordinator: FeedCoordinator) -> [TableCellController] {
-        // Matching each type of data to the right cell controller is now something we only do once. Here.
+        // Matching each type of data to the right Cell Controller is now something we only do once. Here.
 
         return elements.map { (element) in
             switch element {
