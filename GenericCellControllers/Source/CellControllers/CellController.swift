@@ -8,19 +8,7 @@
 
 import Foundation
 
-public protocol CellControllerType: class {
-
-    associatedtype CellHolder: ReusableCellHolder
-
-    static func registerCell(on reusableCellHolder: CellHolder)
-
-    func cellFromReusableCellHolder(_ reusableCellHolder: CellHolder, forIndexPath indexPath: IndexPath) -> CellHolder.CellType
-    func willDisplayCell()
-    func cellSelected()
-    func cellSize(reusableCellHolder: CellHolder) -> CGSize
-}
-
-open class CellController<T: ReusableCellHolder>: CellControllerType {
+open class CellController<T: ReusableCellHolder> {
 
     private weak var reusableCellHolder: T?
     public var indexPath: IndexPath?
@@ -50,7 +38,7 @@ open class CellController<T: ReusableCellHolder>: CellControllerType {
         self.indexPath = indexPath
 
         let cell = reusableCellHolder.dequeueReusableCell(withReuseIdentifier: type(of: self).cellIdentifier, for: indexPath)
-        innerConfigureCell(cell)
+        configureCell(cell)
 
         return cell
     }
@@ -60,20 +48,40 @@ open class CellController<T: ReusableCellHolder>: CellControllerType {
         return reusableCellHolder?.cellForItem(at: indexPath)
     }
 
-    open func innerConfigureCell(_ cell: T.CellType) {
+    open func configureCell(_ cell: T.CellType) {
         // By default do nothing.
     }
 
-    open func willDisplayCell() {
+    open func willDisplayCell(_ cell: T.CellType) {
         // By default do nothing.
     }
 
-    open func cellSelected() {
+    open func didEndDisplayingCell(_ cell: T.CellType) {
+        // By default do nothing.
+    }
+
+    open func didSelectCell() {
+        // By default do nothing.
+    }
+
+    open func didDeselectCell() {
+        // By default do nothing.
+    }
+
+    open func shouldHighlightCell() -> Bool {
+        return true
+    }
+
+    open func didHightlightCell() {
+        // By default do nothing.
+    }
+
+    open func didUnhightlightCell() {
         // By default do nothing.
     }
 
     open func cellSize(reusableCellHolder: T) -> CGSize {
-        return CGSize.zero
+        fatalError("Must be overriden by children.")
     }
     
 }

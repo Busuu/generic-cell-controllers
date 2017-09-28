@@ -17,7 +17,7 @@ open class GenericCellController<T: ReusableCell> : CellController<T.CellHolder>
         return T.self
     }
 
-    public final override func innerConfigureCell(_ cell: T.CellHolder.CellType) {
+    public final override func configureCell(_ cell: T.CellHolder.CellType) {
         let cell = cell as! T
         configureCell(cell)
     }
@@ -26,7 +26,25 @@ open class GenericCellController<T: ReusableCell> : CellController<T.CellHolder>
         return innerCurrentCell() as? T
     }
 
+    public final override func willDisplayCell(_ cell: T.CellHolder.CellType) {
+        let cell = cell as! T
+        willDisplayCell(cell)
+    }
+
+    public final override func didEndDisplayingCell(_ cell: T.CellHolder.CellType) {
+        let cell = cell as! T
+        didEndDisplayingCell(cell)
+    }
+
     open func configureCell(_ cell: T) {
+        // By default do nothing.
+    }
+
+    open func willDisplayCell(_ cell: T) {
+        // By default do nothing.
+    }
+
+    open func didEndDisplayingCell(_ cell: T) {
         // By default do nothing.
     }
 
