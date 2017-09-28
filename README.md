@@ -76,6 +76,11 @@ The `GenericCellController`s use the `IndexPath` they are sent while dequeuing c
 pod 'GenericCellControllers'
 ```
 3. Run `pod install`.
+### Carthage
+Simply add GenericCellControllers to your Cartfile:
+```
+github "Busuu/generic-cell-controllers"
+```
 ### Manually
 1. Clone, add as a submodule or [download](https://github.com/Busuu/generic-cell-controllers/archive/master.zip).
 2. Drag and drop `GenericCellControllers` project to your workspace.
