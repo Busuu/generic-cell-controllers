@@ -13,7 +13,7 @@ You can find all about the process that led us to create `GenericCellControllers
 - Compiler time checks. Helps you detect mistakes ahead of time.
 
 ## How to use
-The best way to learn how to use it is to [read](https://tech.busuu.com/dealing-with-different-kinds-of-cells-in-swift-part-1-of-3-18c6cd10a0b3) [our](https://tech.busuu.com/dealing-with-different-kinds-of-cells-in-swift-part-2-of-3-3fe73b0c50c6) [blogposts](https://tech.busuu.com/dealing-with-different-kinds-of-cells-in-swift-part-3-of-3-80275e29513b).
+The best way to learn how to use it is to [read](https://tech.busuu.com/dealing-with-different-kinds-of-cells-in-swift-part-1-of-3-18c6cd10a0b3) [our](https://tech.busuu.com/dealing-with-different-kinds-of-cells-in-swift-part-2-of-3-3fe73b0c50c6) [blogposts](https://tech.busuu.com/dealing-with-different-kinds-of-cells-in-swift-part-3-of-3-80275e29513b) or have a look at the provided example project.
 
 A quick summary would be:
 1. Subclass `GenericCellController` and implement the methods you require (all of them are optional).
@@ -65,7 +65,7 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 }
 ...
 ```
-Again, refer to our [blog](https://tech.busuu.com/dealing-with-different-kinds-of-cells-in-swift-part-1-of-3-18c6cd10a0b3) for more details (by now you may have figured out that you should really read it 😜).
+Again, refer to our [blog](https://tech.busuu.com/dealing-with-different-kinds-of-cells-in-swift-part-1-of-3-18c6cd10a0b3) (by now you may have figured out that you should really read it 😜) or have a look at the example project for more details.
 ### Variable `IndexPath`s
 The `GenericCellController`s use the `IndexPath` they are sent while dequeuing cells to be able to locate that cell in other methods, like `currentCell()`. If you insert or delete cells in your `UITableView` or `UICollectionView` without reloading it, remember to manually update the `IndexPath` of the Cell Controllers that may be affected.
 ## How to install
