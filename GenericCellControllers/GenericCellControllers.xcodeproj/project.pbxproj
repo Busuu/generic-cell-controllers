@@ -12,8 +12,6 @@
 		CBA31A271F7BB48F00E6BFFE /* GenericCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA31A261F7BB48F00E6BFFE /* GenericCellController.swift */; };
 		CBB1F0DE1F0AA96500F8D4CD /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1F0DB1F0AA96500F8D4CD /* CellController.swift */; };
 		CBB1F0DF1F0AA96500F8D4CD /* ReusableCellHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1F0DD1F0AA96500F8D4CD /* ReusableCellHolder.swift */; };
-		CBB1F0E11F0AACF500F8D4CD /* GenericTableCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1F0E01F0AACF500F8D4CD /* GenericTableCellController.swift */; };
-		CBB1F0E31F0AAD0F00F8D4CD /* GenericCollectionCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1F0E21F0AAD0F00F8D4CD /* GenericCollectionCellController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +34,6 @@
 		CBA31A261F7BB48F00E6BFFE /* GenericCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCellController.swift; sourceTree = "<group>"; };
 		CBB1F0DB1F0AA96500F8D4CD /* CellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		CBB1F0DD1F0AA96500F8D4CD /* ReusableCellHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCellHolder.swift; sourceTree = "<group>"; };
-		CBB1F0E01F0AACF500F8D4CD /* GenericTableCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableCellController.swift; sourceTree = "<group>"; };
-		CBB1F0E21F0AAD0F00F8D4CD /* GenericCollectionCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCollectionCellController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				CBB1F0DB1F0AA96500F8D4CD /* CellController.swift */,
-				CBB1F0E01F0AACF500F8D4CD /* GenericTableCellController.swift */,
-				CBB1F0E21F0AAD0F00F8D4CD /* GenericCollectionCellController.swift */,
 				CBA31A261F7BB48F00E6BFFE /* GenericCellController.swift */,
 			);
 			path = CellControllers;
@@ -229,8 +223,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB1F0E11F0AACF500F8D4CD /* GenericTableCellController.swift in Sources */,
-				CBB1F0E31F0AAD0F00F8D4CD /* GenericCollectionCellController.swift in Sources */,
 				CBA31A271F7BB48F00E6BFFE /* GenericCellController.swift in Sources */,
 				CBB1F0DF1F0AA96500F8D4CD /* ReusableCellHolder.swift in Sources */,
 				CBB1F0DE1F0AA96500F8D4CD /* CellController.swift in Sources */,

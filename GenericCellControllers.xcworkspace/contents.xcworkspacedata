@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:GenericCellControllersExample/GenericCellControllersExample.xcodeproj">
+      location = "group:GenericCellControllers/GenericCellControllers.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:GenericCellControllers/GenericCellControllers.xcodeproj">
+      location = "group:GenericCellControllersExample/GenericCellControllersExample.xcodeproj">
    </FileRef>
 </Workspace>
