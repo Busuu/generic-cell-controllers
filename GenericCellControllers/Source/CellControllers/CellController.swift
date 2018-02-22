@@ -83,5 +83,10 @@ open class CellController<T: ReusableCellHolder> {
     open func cellSize(reusableCellHolder: T) -> CGSize {
         fatalError("Must be overriden by children.")
     }
+
+    open func estimatedCellSize(reusableCellHolder: T) -> CGSize {
+        fatalError("Must be overriden by children.")
+    }
+
     
 }
