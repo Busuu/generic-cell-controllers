@@ -8,13 +8,4 @@
 
 import Foundation
 
-public protocol SimpleGenericTableViewDelegate: GenericTableViewDelegate {
-    var cellControllers: [TableCellController] { get }
-}
-
-public extension SimpleGenericTableViewDelegate {
-
-    func cellController(for indexPath: IndexPath) -> TableCellController {
-        return cellControllers[indexPath.row]
-    }
-}
+public protocol SimpleGenericTableViewDelegate: GenericTableViewDelegate, SimpleTableCellControllerHolder {}

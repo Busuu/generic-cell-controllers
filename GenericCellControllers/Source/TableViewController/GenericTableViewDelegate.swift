@@ -8,9 +8,7 @@
 
 import Foundation
 
-public protocol GenericTableViewDelegate: UITableViewDelegate {
-    func cellController(for indexPath: IndexPath) -> TableCellController
-}
+@objc public protocol GenericTableViewDelegate: UITableViewDelegate, TableCellControllerFinder {}
 
 public extension GenericTableViewDelegate {
 

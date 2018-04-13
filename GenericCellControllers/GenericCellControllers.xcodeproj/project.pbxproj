@@ -21,6 +21,8 @@
 		CB5281B62080A8EF00F602C6 /* SectionedGenericCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5281B52080A8EF00F602C6 /* SectionedGenericCollectionViewDataSource.swift */; };
 		CB5281B82080A94400F602C6 /* SimpleGenericCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5281B72080A94400F602C6 /* SimpleGenericCollectionViewDelegate.swift */; };
 		CB5281BA2080A96B00F602C6 /* SectionedGenericCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5281B92080A96B00F602C6 /* SectionedGenericCollectionViewDelegate.swift */; };
+		CB5281BC2080AEDD00F602C6 /* TableCellControllerFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5281BB2080AEDD00F602C6 /* TableCellControllerFinder.swift */; };
+		CB5281BE2080AF9600F602C6 /* TableCellControllerHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5281BD2080AF9600F602C6 /* TableCellControllerHolder.swift */; };
 		CBA31A271F7BB48F00E6BFFE /* GenericCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA31A261F7BB48F00E6BFFE /* GenericCellController.swift */; };
 		CBB1F0DE1F0AA96500F8D4CD /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1F0DB1F0AA96500F8D4CD /* CellController.swift */; };
 		CBB1F0DF1F0AA96500F8D4CD /* ReusableCellHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1F0DD1F0AA96500F8D4CD /* ReusableCellHolder.swift */; };
@@ -55,6 +57,8 @@
 		CB5281B52080A8EF00F602C6 /* SectionedGenericCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedGenericCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		CB5281B72080A94400F602C6 /* SimpleGenericCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGenericCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		CB5281B92080A96B00F602C6 /* SectionedGenericCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedGenericCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		CB5281BB2080AEDD00F602C6 /* TableCellControllerFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellControllerFinder.swift; sourceTree = "<group>"; };
+		CB5281BD2080AF9600F602C6 /* TableCellControllerHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellControllerHolder.swift; sourceTree = "<group>"; };
 		CBA31A261F7BB48F00E6BFFE /* GenericCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCellController.swift; sourceTree = "<group>"; };
 		CBB1F0DB1F0AA96500F8D4CD /* CellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		CBB1F0DD1F0AA96500F8D4CD /* ReusableCellHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCellHolder.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 		CB52819B207FC63F00F602C6 /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CB5281BD2080AF9600F602C6 /* TableCellControllerHolder.swift */,
+				CB5281BB2080AEDD00F602C6 /* TableCellControllerFinder.swift */,
 				CB5281A0207FC89F00F602C6 /* GenericTableViewDataSource.swift */,
 				CB52819C207FC67300F602C6 /* SimpleGenericTableViewDataSource.swift */,
 				CB5281A42080A46000F602C6 /* SectionedGenericTableViewDataSource.swift */,
@@ -278,6 +284,7 @@
 				CBA31A271F7BB48F00E6BFFE /* GenericCellController.swift in Sources */,
 				CB5281B82080A94400F602C6 /* SimpleGenericCollectionViewDelegate.swift in Sources */,
 				CBB1F0DF1F0AA96500F8D4CD /* ReusableCellHolder.swift in Sources */,
+				CB5281BE2080AF9600F602C6 /* TableCellControllerHolder.swift in Sources */,
 				CB52819D207FC67300F602C6 /* SimpleGenericTableViewDataSource.swift in Sources */,
 				CB5281B62080A8EF00F602C6 /* SectionedGenericCollectionViewDataSource.swift in Sources */,
 				CB5281B42080A7CB00F602C6 /* SimpleGenericCollectionViewDataSource.swift in Sources */,
@@ -289,6 +296,7 @@
 				CB5281A1207FC89F00F602C6 /* GenericTableViewDataSource.swift in Sources */,
 				CB5281B02080A64300F602C6 /* GenericCollectionViewDataSource.swift in Sources */,
 				CBB1F0DE1F0AA96500F8D4CD /* CellController.swift in Sources */,
+				CB5281BC2080AEDD00F602C6 /* TableCellControllerFinder.swift in Sources */,
 				CB5281A72080A4E600F602C6 /* SectionedGenericTableViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

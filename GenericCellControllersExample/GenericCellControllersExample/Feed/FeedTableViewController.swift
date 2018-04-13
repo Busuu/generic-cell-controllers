@@ -9,10 +9,12 @@
 import UIKit
 import GenericCellControllers
 
-class FeedTableViewController: UITableViewController {
+class FeedTableViewController: UIViewController, GenericTableViewDelegate, GenericTableViewDataSource, SimpleTableCellControllerHolder {
+
+    @IBOutlet weak var tableView: UITableView!
 
     private let cellControllerFactory = FeedCellControllerFactory()
-    private var cellControllers: [TableCellController] = []
+    private(set) var cellControllers: [TableCellController] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,21 +25,21 @@ class FeedTableViewController: UITableViewController {
         displayData()
     }
 
-    // MARK: - Table view data source
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cellControllers.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // Delegate on your Cell Controllers the dequeuing of the cells.
-        return cellControllers[indexPath.row].cellFromReusableCellHolder(tableView, forIndexPath: indexPath)
-    }
-
-    // MARK: - Table view delegate
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Pass the event to the Cell Controller. It is responsible for knowing what to do.
-        cellControllers[indexPath.row].didSelectCell()
-    }
+//    // MARK: - Table view data source
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return cellControllers.count
+//    }
+//
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        // Delegate on your Cell Controllers the dequeuing of the cells.
+//        return cellControllers[indexPath.row].cellFromReusableCellHolder(tableView, forIndexPath: indexPath)
+//    }
+//
+//    // MARK: - Table view delegate
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        // Pass the event to the Cell Controller. It is responsible for knowing what to do.
+//        cellControllers[indexPath.row].didSelectCell()
+//    }
 
 }
 

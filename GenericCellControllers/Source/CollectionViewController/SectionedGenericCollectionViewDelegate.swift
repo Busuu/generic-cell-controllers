@@ -12,7 +12,7 @@ public protocol SectionedGenericCollectionViewDelegate: GenericCollectionViewDel
     var cellControllers: [[CollectionCellController]] { get }
 }
 
-public extension SimpleGenericCollectionViewDelegate {
+public extension SectionedGenericCollectionViewDelegate {
 
     func cellController(for indexPath: IndexPath) -> CollectionCellController {
         return cellControllers[indexPath.section][indexPath.item]

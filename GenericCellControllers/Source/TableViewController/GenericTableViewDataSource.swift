@@ -8,13 +8,18 @@
 
 import Foundation
 
-public protocol GenericTableViewDataSource: UITableViewDataSource {
-    func cellController(for indexPath: IndexPath) -> TableCellController
-}
+@objc public protocol GenericTableViewDataSource: UITableViewDataSource, TableCellControllerFinder {}
 
 public extension GenericTableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return cellController(for: indexPath).cellFromReusableCellHolder(tableView, forIndexPath: indexPath)
+    }
+}
+
+public extension GenericTableViewDataSource where Self: SimpleTableCellControllerHolder {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cellControllers.count
     }
 }

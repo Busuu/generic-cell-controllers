@@ -8,15 +8,10 @@
 
 import Foundation
 
-public protocol SimpleGenericTableViewDataSource: GenericTableViewDataSource {
-    var cellControllers: [TableCellController] { get }
+public protocol SimpleGenericTableViewDataSource: GenericTableViewDataSource, SimpleTableCellControllerHolder {
 }
 
 public extension SimpleGenericTableViewDataSource {
-
-    func cellController(for indexPath: IndexPath) -> TableCellController {
-        return cellControllers[indexPath.row]
-    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellControllers.count
