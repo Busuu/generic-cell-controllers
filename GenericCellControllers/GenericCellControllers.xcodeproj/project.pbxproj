@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		CB5261171F0AA79000C7BF65 /* GenericCellControllers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52610D1F0AA79000C7BF65 /* GenericCellControllers.framework */; };
 		CB52612A1F0AA7B600C7BF65 /* GenericCellControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = CB5261281F0AA7B600C7BF65 /* GenericCellControllers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB52819D207FC67300F602C6 /* SimpleGenericTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52819C207FC67300F602C6 /* SimpleGenericTableViewDataSource.swift */; };
+		CB52819F207FC6E900F602C6 /* SimpleGenericTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52819E207FC6E900F602C6 /* SimpleGenericTableViewDelegate.swift */; };
+		CB5281A1207FC89F00F602C6 /* GenericTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5281A0207FC89F00F602C6 /* GenericTableViewDataSource.swift */; };
+		CB5281A3207FC9B300F602C6 /* GenericTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5281A2207FC9B300F602C6 /* GenericTableViewDelegate.swift */; };
+		CB5281A52080A46000F602C6 /* SectionedGenericTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5281A42080A46000F602C6 /* SectionedGenericTableViewDataSource.swift */; };
+		CB5281A72080A4E600F602C6 /* SectionedGenericTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5281A62080A4E600F602C6 /* SectionedGenericTableViewDelegate.swift */; };
 		CBA31A271F7BB48F00E6BFFE /* GenericCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA31A261F7BB48F00E6BFFE /* GenericCellController.swift */; };
 		CBB1F0DE1F0AA96500F8D4CD /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1F0DB1F0AA96500F8D4CD /* CellController.swift */; };
 		CBB1F0DF1F0AA96500F8D4CD /* ReusableCellHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1F0DD1F0AA96500F8D4CD /* ReusableCellHolder.swift */; };
@@ -31,6 +37,12 @@
 		CB5261281F0AA7B600C7BF65 /* GenericCellControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericCellControllers.h; sourceTree = "<group>"; };
 		CB5261291F0AA7B600C7BF65 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB52612E1F0AA7C300C7BF65 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB52819C207FC67300F602C6 /* SimpleGenericTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGenericTableViewDataSource.swift; sourceTree = "<group>"; };
+		CB52819E207FC6E900F602C6 /* SimpleGenericTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGenericTableViewDelegate.swift; sourceTree = "<group>"; };
+		CB5281A0207FC89F00F602C6 /* GenericTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSource.swift; sourceTree = "<group>"; };
+		CB5281A2207FC9B300F602C6 /* GenericTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDelegate.swift; sourceTree = "<group>"; };
+		CB5281A42080A46000F602C6 /* SectionedGenericTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedGenericTableViewDataSource.swift; sourceTree = "<group>"; };
+		CB5281A62080A4E600F602C6 /* SectionedGenericTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedGenericTableViewDelegate.swift; sourceTree = "<group>"; };
 		CBA31A261F7BB48F00E6BFFE /* GenericCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCellController.swift; sourceTree = "<group>"; };
 		CBB1F0DB1F0AA96500F8D4CD /* CellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		CBB1F0DD1F0AA96500F8D4CD /* ReusableCellHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCellHolder.swift; sourceTree = "<group>"; };
@@ -77,6 +89,7 @@
 		CB5261271F0AA7B600C7BF65 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				CB52819B207FC63F00F602C6 /* TableViewController */,
 				CBB1F0DA1F0AA96500F8D4CD /* CellControllers */,
 				CBB1F0DC1F0AA96500F8D4CD /* ReusableCell */,
 				CB5261281F0AA7B600C7BF65 /* GenericCellControllers.h */,
@@ -91,6 +104,19 @@
 				CB52612E1F0AA7C300C7BF65 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		CB52819B207FC63F00F602C6 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB5281A0207FC89F00F602C6 /* GenericTableViewDataSource.swift */,
+				CB52819C207FC67300F602C6 /* SimpleGenericTableViewDataSource.swift */,
+				CB5281A42080A46000F602C6 /* SectionedGenericTableViewDataSource.swift */,
+				CB5281A2207FC9B300F602C6 /* GenericTableViewDelegate.swift */,
+				CB52819E207FC6E900F602C6 /* SimpleGenericTableViewDelegate.swift */,
+				CB5281A62080A4E600F602C6 /* SectionedGenericTableViewDelegate.swift */,
+			);
+			path = TableViewController;
 			sourceTree = "<group>";
 		};
 		CBB1F0DA1F0AA96500F8D4CD /* CellControllers */ = {
@@ -225,7 +251,13 @@
 			files = (
 				CBA31A271F7BB48F00E6BFFE /* GenericCellController.swift in Sources */,
 				CBB1F0DF1F0AA96500F8D4CD /* ReusableCellHolder.swift in Sources */,
+				CB52819D207FC67300F602C6 /* SimpleGenericTableViewDataSource.swift in Sources */,
+				CB52819F207FC6E900F602C6 /* SimpleGenericTableViewDelegate.swift in Sources */,
+				CB5281A3207FC9B300F602C6 /* GenericTableViewDelegate.swift in Sources */,
+				CB5281A52080A46000F602C6 /* SectionedGenericTableViewDataSource.swift in Sources */,
+				CB5281A1207FC89F00F602C6 /* GenericTableViewDataSource.swift in Sources */,
 				CBB1F0DE1F0AA96500F8D4CD /* CellController.swift in Sources */,
+				CB5281A72080A4E600F602C6 /* SectionedGenericTableViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
