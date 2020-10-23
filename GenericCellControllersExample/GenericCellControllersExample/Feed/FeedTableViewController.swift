@@ -45,7 +45,7 @@ private extension FeedTableViewController {
 
     func configureTableView() {
 
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 200
 
         // Since the Cell Controller Factory is the only one that knows the actual cell controllers
