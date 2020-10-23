@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.source_files  = "GenericCellControllers/Source/**/*.{h,m,swift}"
   s.public_header_files = "GenericCellControllers/Source/**/*.h"
   s.requires_arc = true
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
 
 end
