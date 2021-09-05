@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - ReusableCell
 public protocol ReusableCell: class {
-    associatedtype CellHolder: ReusableCellHolder
+	associatedtype CellHolder: ReusableCellHolder where CellHolder.CellType == Self
 }
 
 extension UITableViewCell: ReusableCell {
