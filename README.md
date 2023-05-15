@@ -1,6 +1,6 @@
 # Generic Cell Controllers
 
-`GenericCellControllers` is a Swift framework that simplifies dealing with [heterogeneous] lists of data in a `UITableView` or `UICollectionView`. Its main goal is to reduce boilerplate and to let you focus on the important bits of your feature.
+`GenericCellControllers` is a Swift framework that simplifies dealing with [heterogeneous] lists of data in a `UITableView` or `UICollectionView`. Its main goal is to reduce boilerplate and to let you focus on the important bits of your feature. 
 
 ## Motivation
 You can find all about the process that led us to create `GenericCellControllers` in our [blog](https://tech.busuu.com/dealing-with-different-kinds-of-cells-in-swift-part-1-of-3-18c6cd10a0b3).
